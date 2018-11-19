@@ -12,29 +12,35 @@
   </style>
 </head>
 <body>
+
+  <p>Which logo do you want to see spin?</p>
+  <a id="button-1" class="waves-effect waves-light btn">01</a>
+  <a id="button-2" class="waves-effect waves-light btn">Knight</a>
+
   <ml-model
-    src="balloon.fbx"
+    id="kf-logo"
+    src="kf_logo.glb"
+    trigger="button-1"
     style="width: 300px; height: 300px; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);"
     z-offset="500px"
     extractable="true"
-    extracted-scale="5"
+    extracted-scale="10"
+    prism-rotation="0 -0.7 0"
     unbounded="true">
   </ml-model>
 
-  <ml-quad
-    src="couch.png"
-    style="width: 300px; height: 271px;"
-    color="rgba(255, 255, 255, 0.9)">
-  </ml-quad>
-
   <ml-model
-    src="whale.fbx"
-    style="width: 300px; height: 300px; position: absolute; right: 0; top: 100%; transform: translate(-50%, -50%);"
+    id="01-logo"
+    src="01_logo.glb"
+    trigger="button-2"
+    style="width: 300px; height: 300px; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);"
     z-offset="500px"
-    model-scale="0.5 0.5 0.5"
-    prism-rotation="0 0.785398 0"
-    xscale-to="axes: 0.5 0.5 0.5;duration: 3s; track: 1;"
-    model-animation="Take 001, false, -1">
+    extractable="true"
+    extracted-scale="10"
+    prism-rotation="0 -0.7 0"
+    unbounded="true">
   </ml-model>
+
+
 </body>
 </html>
