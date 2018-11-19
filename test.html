@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="transparent-background">
-  <title>Prismatic Intermediate</title>
+  <title>Prismatic Advanced</title>
   <script src="https://unpkg.com/@magicleap/prismatic"></script>
   <style>
     body {
@@ -16,7 +16,9 @@
     src="balloon.fbx"
     style="width: 300px; height: 300px; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);"
     z-offset="500px"
-    extractable="true">
+    extractable="true"
+    extracted-scale="5"
+    unbounded="true">
   </ml-model>
 
   <ml-quad
@@ -24,5 +26,15 @@
     style="width: 300px; height: 271px;"
     color="rgba(255, 255, 255, 0.9)">
   </ml-quad>
+
+  <ml-model
+    src="whale.fbx"
+    style="width: 300px; height: 300px; position: absolute; right: 0; top: 100%; transform: translate(-50%, -50%);"
+    z-offset="500px"
+    model-scale="0.5 0.5 0.5"
+    prism-rotation="0 0.785398 0"
+    xscale-to="axes: 0.5 0.5 0.5;duration: 3s; track: 1;"
+    model-animation="Take 001, false, -1">
+  </ml-model>
 </body>
 </html>
